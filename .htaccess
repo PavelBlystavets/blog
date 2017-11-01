@@ -1,0 +1,6 @@
+Allow from all
+Options FollowSymLinks
+RewriteEngine On
+RewriteRule ^post-([0-9]+)\.php$ view_post.php?id=$1
+RewriteRule ^cat-([0-9]+)\.php$ view_cat.php?cat=$1
+RewriteRule ^date-([0-9]+)-([0-9]+)\.php$ view_date.php?date=$1-$2
